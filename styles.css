@@ -1,12 +1,10 @@
-
-
 body {
-  background-image: url('assets/contour_lines.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  font-family: Arial, Helvetica, sans-serif;
- font-size: 18px;
+    background-image: url("assets/contour_lines.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
 
 .banner {
@@ -16,78 +14,186 @@ body {
     background-color: white;
     width: 100%;
     height: 75px;
-    position: fixed; 
-    top: 0; 
-    left: 0; 
+    position: fixed;
+    top: 0;
+    left: 0;
     right: 0;
     font-weight: bold;
 }
 
 .menu {
     float: right;
-     height: 100%;
+    height: 100%;
 }
 
 .menu a {
-  color: #5746A3;
-  text-align: center;
-  text-decoration: none;
-  height: 100%;
-  padding-left:20px;
-  padding-right: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;   
+    color: #5746a3;
+    text-align: center;
+    text-decoration: none;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu a:hover {
-  background-color: hsla(251, 40%, 46%, 0.5);
+    background-color: hsla(251, 40%, 46%, 0.5);
 }
 
-#headshot{
-    width:300px;
-      display: block;
-  margin-left: auto;
-  margin-right: auto;
+#headshot {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .content {
-  margin: auto;
-  width: 75%;
-  margin-top: 100px;
-    text-align: center
+    margin: auto;
+    width: 75%;
+    margin-top: 100px;
+    text-align: center;
 }
 
 .bio {
-    background-color: #5746A3;
+    background-color: #5746a3;
     color: white;
     font-size: 16px;
     padding: 20px;
     width: 400px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     line-height: 1.3;
-    border-radius: 10px
-    
+    border-radius: 10px;
 }
 
 .links a img {
     width: 50px;
 }
 
-#school:hover{
-    content: url(assets/school2.png)
+#school:hover {
+    content: url(assets/school2.png);
 }
 
-#email:hover{
-    content: url(assets/email2.png)
+#email:hover {
+    content: url(assets/email2.png);
 }
 
-#github:hover{
-    content:url(assets/github2.png)
+#github:hover {
+    content: url(assets/github2.png);
 }
 
-#linkedin:hover{
-    content:url(assets/linkedin2.png)
+#linkedin:hover {
+    content: url(assets/linkedin2.png);
+}
+
+.swiper {
+    /*margin: auto;*/
+    /*width: 500px;*/
+    margin-top: 100px;
+    /*height:600px;*/
+    width: 550px;
+    --swiper-navigation-color: #5746a3;
+    --swiper-navigation-sides-offset: 10px;
+}
+
+/* Card */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+.card-container {
+  padding-block: 5rem;
+}
+*/
+
+.card-content {
+    margin-inline: 1.75rem;
+    border-radius: 1.75rem;
+    /*overflow: hidden;*/
+}
+
+.card-article {
+    border-radius: 1.25rem;
+    /*overflow: hidden;*/
+    background-color: #5746a3;
+    width: 400px;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-image {
+    position: relative;
+}
+
+.card-data {
+    /*padding: 1.5rem 2rem;*/
+    border-radius: 1rem;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    color:white;
+}
+
+.card-description {
+    font-weight: 500;
+        font-size: 16px;
+    margin:10px;
+    margin-left: 20px;
+    margin-right: 20px;
+        line-height: 1.3;
+    /*margin-bottom: 1.75rem;*/
+}
+
+.card-name{
+    margin:10px;
+    margin-top: 0;
+}
+
+.card-button {
+    display: inline-block;
+    font-weight: 600;
+    color:#5746a3;
+    text-decoration-line: none;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+     border-radius: 1.25rem;
+}
+
+.card-button:hover{
+    background-color: #ABA2D1;
+}
+
+.card-image img {
+    display: block;
+    width: 400px;
+    border-radius: 1.25rem;
+    /*max-width: 60%;*/
+    /*padding: 10px;*/
+    scale: 0.9;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+    /*margin-bottom: -.75rem;*/
+}
+
+.swiper-button-prev, .swiper-button-next {
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px
+    
+}
+
+.swiper-button-prev:hover {
+    background-color: #ABA2D1;   
+}
+.swiper-button-next:hover {
+    background-color:#ABA2D1;   
 }

@@ -5,7 +5,8 @@
         <title>Sidra Wernli</title>
         <link rel="shortcut icon" type="image/x-icon" href="star.png?">
         <link rel="stylesheet" href="styles.css" />
-        <script src="script.js"></script>
+        <!-- Swiper css --->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     </head>
     <body>
         <ul class='banner'>
@@ -13,7 +14,96 @@
             <li class="menu"><a href="projects.html">Projects</a></li>
             <li class="menu"><a href="cv.html">CV</a></li>
         </ul>
-        <div class="content">
-        </div>    
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+            <div class="card-article">
+            <div class="card-image">
+              <img src="assets/thesis.png" alt="image">
+            </div>
+
+            <div class="card-data">
+              <h3 class="card-name">Wildfire Risk Modeling</h3>
+              <p class="card-description">
+                Bachelor's thesis in Computer Science at Lewis and Clark College on modeling wildfire
+                  risk in Washington State using machine learning and spatial data.
+              </p>
+              <a href="https://primo.lclark.edu/discovery/fulldisplay?docid=alma99901080191801844&context=L&vid=01ALLIANCE_LCC:LCC&lang=en&adaptor=Local%20Search%20Engine&sortby=title" 
+                 target="_blank" class="card-button">Read Here</a>
+            </div>
+          </div>
+              </div>
+        <div class="swiper-slide">
+        <div class="card-article">
+            <div class="card-image">
+              <img src="assets/hurricanes.png" alt="image">
+            </div>
+
+            <div class="card-data">
+              <h3 class="card-name">Animating Sea Surface Temperature</h3>
+              <p class="card-description">
+               Google Earth Engine app exploring the "cold wake" or cooling of the
+                  ocean's surface after the passing of a hurricane. Coded in Spring 2026 for
+                  the Oceanography course at Lewis and Clark College.
+              </p>
+              <a href="https://sjowernli.users.earthengine.app/view/north-atlantic-hurricanes" target="_blank" class="card-button">View Here</a>
+            </div>
+          </div>
+              </div>
+        <!--
+        <div class="swiper-slide">
+        <div class="card-article">
+            <div class="card-image">
+              <img src="assets/thesis.png" alt="image">
+            </div>
+
+            <div class="card-data">
+              <h3 class="card-name">Khaleed Ademola</h3>
+              <p class="card-description">
+                Passionate about development and design,
+                I carry out projects at the request of users
+              </p>
+              <a href="https://primo.lclark.edu/discovery/fulldisplay?docid=alma99901080191801844&context=L&vid=01ALLIANCE_LCC:LCC&lang=en&adaptor=Local%20Search%20Engine&sortby=title" class="card-button">View More</a>
+            </div>
+            </div>
+          </div>
+        -->
+          </div>
+        
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+        </div> 
+        
+        <!-- Swiper js -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+              // Optional parameters
+              direction: 'horizontal',
+              loop: true,
+
+              // If we need pagination
+              //pagination: {
+              //  el: '.swiper-pagination',
+              //},
+
+              // Navigation arrows
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+
+              // And if we need scrollbar
+              //scrollbar: {
+              //  el: '.swiper-scrollbar',
+              //},
+            });
+        </script>
     </body>
 </html>
